@@ -173,7 +173,7 @@ function FromSplitBill({ selectedFriend, onSplitBill }) {
     e.preventDefault();
     if (!Bill || !paidByUesr) return;
 
-    onSplitBill(whoIsPaying === "user" ? paidByFriend : -paidByUesr);
+    onSplitBill(whoIsPaying === "user" ? paidByUesr : paidByFriend);
   }
 
   return (
